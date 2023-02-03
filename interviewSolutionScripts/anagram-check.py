@@ -136,25 +136,24 @@ def anagramUsingHashMaps(text, anotherText):
     if not equalLength(text, anotherText):
         return False
 
-    map = {}
+    hashMap = {}
 
     for i in range(len(text)):
-        if text[i] in map:
-            map[text[i]] += 1
+        if text[i] in hashMap:
+            hashMap[text[i]] += 1
         else:
-            map[text[i]] = 1
+            hashMap[text[i]] = 1
 
     for i in range(len(anotherText)):
-        if anotherText[i] in map:
-            map[anotherText[i]] -= 1
+        if anotherText[i] in hashMap:
+            hashMap[anotherText[i]] -= 1
         else:
             return False
 
-    if any(map.values()):
+    if any(hashMap.values()):
         return False
 
     return True
-
 
 
 s1 = "public rel!@#$%^&&ations"
@@ -163,8 +162,11 @@ s2 = "crap built on alies."
 print('Check anagram using : {0:3s}; Result is : {1:3s}'.format("anagram", str(anagram(s1,
                                                                                        s2))))
 
-print('Check anagram using : {0:3s}; Result is : {1:3s}'.format("anagramUsingCharCount", str(anagramUsingCharCount(s1,
-                                                                                                                   s2))))
+print('Check anagram using : {0:3s}; Result is : {1:3s}'.format("anagramUsingCharCount",
+                                                                str(anagramUsingCharCount(s1, s2))))
 
-print('Check anagram using : {0:3s}; Result is : {1:3s}'.format("anagramUsingCharCount", str(anagramUsingCharCount(s1,
-                                                                                                                   s2))))
+print('Check anagram using : {0:3s}; Result is : {1:3s}'.format("anagramUsingCharCount",
+                                                                str(anagramUsingOneCount(s1, s2))))
+
+print('Check anagram using : {0:3s}; Result is : {1:3s}'.format("anagramUsingCharCount",
+                                                                str(anagramUsingHashMaps(s1, s2))))
