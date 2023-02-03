@@ -15,6 +15,12 @@ Udemy course for DS Algo using Python
 11. Length :   9; Size in bytes:  184 
 12. Length :  10; Size in bytes:  184
 
-### Dyamic Array Implementation : 
+### Dynamic Array Implementation : 
 
 ![img.png](images/img.png)
+
+### Amortized Analysis
+![img.png](images/img-amortized.png)
+
+#### Amortized process
+![img.png](images/img-amortized-process.png)
