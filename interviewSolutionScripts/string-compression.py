@@ -1,4 +1,13 @@
 def compressString(text):
+    """
+    Create a frequency map of characters and return key+value as string
+
+    Time Complexity: O(N)\n
+    Auxiliary Space: O(N)
+
+    :param text:
+    :return:
+    """
     hashMap = {}
     compressed = ''
 
@@ -15,6 +24,15 @@ def compressString(text):
 
 
 def compressStringRunLengthAlgo(text):
+    """
+    Implementation of Run Length ALgorithm which is compressing without checking
+
+    Time Complexity: O(N)\n
+    Auxiliary Space: O(N)
+
+    :param text:
+    :return:
+    """
     length = len(text)
     compressed = ''
 
