@@ -4,7 +4,6 @@ Udemy course for DS Algo using Python
 ### Dynamic Array : 
 1. While appending Python allocates memory in chunks for ex 
 3. Length :   0; Size in bytes:   56
-4.Length :   1; Size in bytes:   88 
 4. Length :   2; Size in bytes:   88 
 5. Length :   3; Size in bytes:   88 
 6. Length :   4; Size in bytes:   88 
