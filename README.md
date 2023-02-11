@@ -15,4 +15,8 @@ Udemy course for DS Algo using Python
 
 ### Deque
 ![img.png](images/img_6.png)
+![img.png](images/img_7.png)
+![img_1.png](images/img_8.png)
 
+#### Implementing a Deque
+![img.png](images/img_9.png)
