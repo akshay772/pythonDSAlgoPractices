@@ -8,22 +8,22 @@ class Queue2Stacks(object):
     Space Complexity: O(n).
     """
     def __init__(self):
-        self.stack1 = []
-        self.stack2 = []
+        self.inStack = []
+        self.outStack = []
 
     def enqueue(self, item):
-        while len(self.stack1) != 0:
-            self.stack2.append(self.stack1[-1])
-            self.stack1.pop()
+        while len(self.inStack) != 0:
+            self.outStack.append(self.inStack[-1])
+            self.inStack.pop()
 
-        self.stack1.append(item)
+        self.inStack.append(item)
 
-        while len(self.stack2) != 0:
-            self.stack1.append(self.stack2[-1])
-            self.stack2.pop()
+        while len(self.outStack) != 0:
+            self.inStack.append(self.outStack[-1])
+            self.outStack.pop()
 
     def dequeue(self):
-        return self.stack1.pop()
+        return self.inStack.pop()
 
 
 class Queue2StacksMoveOnce(object):
@@ -45,20 +45,20 @@ class Queue2StacksMoveOnce(object):
     Auxiliary Space: O(N). Use of stack for storing values.
     """
     def __init__(self):
-        self.stack1 = []
-        self.stack2 = []
+        self.inStack = []
+        self.outStack = []
 
     def enqueue(self, item):
-        self.stack1.append(item)
+        self.inStack.append(item)
 
     def dequeue(self):
-        if len(self.stack2) == 0 and len(self.stack1) > 0:
-            while len(self.stack1) != 0:
-                self.stack2.append(self.stack1.pop())
-            return self.stack2.pop()
+        if len(self.outStack) == 0 and len(self.inStack) > 0:
+            while len(self.inStack) != 0:
+                self.outStack.append(self.inStack.pop())
+            return self.outStack.pop()
 
         else:
-            return self.stack2.pop()
+            return self.outStack.pop()
 
 
 class Queue2StacksRecursive(object):
