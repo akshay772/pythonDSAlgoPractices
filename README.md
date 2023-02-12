@@ -14,4 +14,9 @@ Types of Linked Lists :
    3. Removing an element : ![img_2.png](images/img_6.png)
 
 ### Doubly Linked Lists
-1. 
+1. ![img.png](images/img_7.png)
+2. ![img.png](images/img_8.png)
+3. Examples : 
+   1. Inserting & Deleting : ![img.png](images/img_9.png)
+   2. Insert to front : ![img.png](images/img_10.png)
+   3. Delete a Node : ![img.png](images/img_11.png)
