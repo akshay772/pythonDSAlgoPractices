@@ -1,7 +1,7 @@
 # pythonDSAlgoPractices
 Udemy course for DS Algo using Python
 
-### Dynamic Array : 
+## Dynamic Array : 
 1. While appending Python allocates memory in chunks for ex 
 3. Length :   0; Size in bytes:   56
 4. Length :   2; Size in bytes:   88 
