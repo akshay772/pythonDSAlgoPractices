@@ -50,4 +50,4 @@ def maxSumContinuousKadaneAlgorithm(arr):
 
 
 print(maxSumContinuousWrong([1, 2, -1, 3, 4, 10, 10, -10, -1]))
-print(maxSumContinuousKadaneAlgorithm([1, 2, -1, 3, 4, 10, 10, -10, -1]))
+print(maxSumContinuousKadaneAlgorithm([1, 2, -1, 3, 4, 10, 10, -20, -10, -1, 20, 10, 10]))
