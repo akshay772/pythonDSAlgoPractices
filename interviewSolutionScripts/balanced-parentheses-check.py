@@ -64,7 +64,7 @@ def balanceParenthesisCheckUsingStacks(text):
         return False
 
 
-def balanceParenthesisCheckUsingQueue(text):
+def balanceParenthesisCheckUsingStackAnother(text):
     """
     Using queue First Map opening parentheses to respective closing parentheses. Iterate through the given expression
     using ‘char’, if ‘char’ is an open parentheses, append in queue, if ‘char’ is close parentheses, Check whether
@@ -79,16 +79,16 @@ def balanceParenthesisCheckUsingQueue(text):
     openBrackets = tuple('{[(')
     closeBrackets = tuple('}])')
     firstMap = dict(zip(openBrackets, closeBrackets))
-    queue = []
+    stack = []
 
     for char in text:
         if char in openBrackets:
-            queue.append(firstMap[char])
+            stack.append(firstMap[char])
         elif char in closeBrackets:
-            if not queue or char != queue.pop():
+            if not stack or char != stack.pop():
                 return False
 
-    if not queue:
+    if not stack:
         return True
     else:
         return False
@@ -152,9 +152,9 @@ print(balanceParenthesisCheckUsingStacks('[](){([[[]]])}'))
 print(balanceParenthesisCheckUsingStacks('[](){([[[]]])}(}}}{{{'))
 print(balanceParenthesisCheckUsingStacks('{}}{'))
 
-print(balanceParenthesisCheckUsingQueue('[](){([[[]]])}'))
-print(balanceParenthesisCheckUsingQueue('[](){([[[]]])}(}}}{{{'))
-print(balanceParenthesisCheckUsingQueue('{}}{'))
+print(balanceParenthesisCheckUsingStackAnother('[](){([[[]]])}'))
+print(balanceParenthesisCheckUsingStackAnother('[](){([[[]]])}(}}}{{{'))
+print(balanceParenthesisCheckUsingStackAnother('{}}{'))
 
 print(balanceParenthesisCheckUsingElimination('[](){([[[]]])}'))
 print(balanceParenthesisCheckUsingElimination('[](){([[[]]])}(}}}{{{'))
