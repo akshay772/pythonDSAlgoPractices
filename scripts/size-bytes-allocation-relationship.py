@@ -7,7 +7,7 @@ data = []
 
 for i in range(n):
     # number of elements
-    a = len(data);
+    a = len(data)
 
     # actual size in bytes
     b = sys.getsizeof(data)
