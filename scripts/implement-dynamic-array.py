@@ -6,7 +6,6 @@ class DynamicArray(object):
     """
     DYNAMIC ARRAY CLASS (Similar to Python List)
     """
-
     def __init__(self):
         self.n = 0  # Count actual elements (Default is 0)
         self.capacity = 1  # Default Capacity
