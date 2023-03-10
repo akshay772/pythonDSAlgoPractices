@@ -57,7 +57,7 @@ def push(headNode, newData):
     newNode.next = headNode
     headNode = newNode
 
-    return headNode
+    return prev
 
 
 def printList(headNode):

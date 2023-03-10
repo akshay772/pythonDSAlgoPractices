@@ -73,7 +73,6 @@ class LinkedList(object):
     def reverseUtil(self, currNode, prev):
         if currNode.next is None:
             self.head = currNode
-
             currNode.next = prev
             return
 
