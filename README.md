@@ -5,4 +5,5 @@ Udemy course for DS Algo using Python
 ### 2. Stacks, Queues and Deques
 ### 3. Linked Lists
 ### 4. Recursion
+### 5. Tree
 
