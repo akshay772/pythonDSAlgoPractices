@@ -25,3 +25,7 @@ Udemy course for DS Algo using Python
 #### 12. ![img_11.png](images/img_11.png)
 #### 13. ![img_12.png](images/img_12.png)
 #### 14. ![img_13.png](images/img_13.png)
+
+### Implementation
+#### 1. ![img.png](images/img_17.png)
+#### 2. ![img.png](images/img_18.png)
