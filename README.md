@@ -29,3 +29,21 @@ Udemy course for DS Algo using Python
 ### Implementation
 #### 1. ![img.png](images/img_17.png)
 #### 2. ![img.png](images/img_18.png)
+#### 3. ![img_29.png](images/img_29.png)
+#### 4. ![img_30.png](images/img_30.png)
+
+### Tree Traversals
+### ![img_19.png](images/img_19.png)
+
+#### 1. ![img_20.png](images/img_20.png)
+#### 2. ![img_21.png](images/img_21.png)
+#### 3. ![img_22.png](images/img_22.png)
+#### 4. ![img_28.png](images/img_28.png)
+
+### Priority Queue
+#### 1. ![img_23.png](images/img_23.png)
+#### 2. ![img_24.png](images/img_24.png)
+#### 3. ![img_25.png](images/img_25.png)
+#### 4. ![img_26.png](images/img_26.png)
+#### 5. Implementation
+##### a. ![img_27.png](images/img_27.png)

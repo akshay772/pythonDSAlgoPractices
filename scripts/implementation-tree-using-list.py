@@ -1,8 +1,26 @@
-def BinaryTree(root):
+"""
+    Implementation of a Binary Tree using List data-type
+"""
+
+
+def binaryTree(root):
+    """
+    Initialize a root node
+
+    :param root:
+    :return:
+    """
     return [root, [], []]
 
 
 def insertLeft(root, newBranch):
+    """
+    Insert left child at root node
+
+    :param root:
+    :param newBranch:
+    :return:
+    """
     temp = root.pop(1)
 
     if len(temp) > 1:
@@ -14,6 +32,13 @@ def insertLeft(root, newBranch):
 
 
 def insertRight(root, newBranch):
+    """
+    Insert right child at root node
+
+    :param root:
+    :param newBranch:
+    :return:
+    """
     temp = root.pop(2)
 
     if len(temp) > 1:
@@ -25,22 +50,47 @@ def insertRight(root, newBranch):
 
 
 def getRootVal(root):
+    """
+    Get value at root node
+
+    :param root:
+    :return:
+    """
     return root[0]
 
 
 def setRootVal(root, newVal):
+    """
+    Set value of root node
+
+    :param root:
+    :param newVal:
+    :return:
+    """
     root[0] = newVal
 
 
 def getLeftChild(root):
+    """
+    Get value at left child of root node
+
+    :param root:
+    :return:
+    """
     return root[1]
 
 
 def getRightChild(root):
+    """
+    Get value at right child of root node
+
+    :param root:
+    :return:
+    """
     return root[2]
 
 
-r = BinaryTree(3)
+r = binaryTree(3)
 print(insertLeft(r, 4))
 print(insertLeft(r, 5))
 print(insertRight(r, 6))
