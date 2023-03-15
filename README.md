@@ -47,3 +47,10 @@ Udemy course for DS Algo using Python
 #### 4. ![img_26.png](images/img_26.png)
 #### 5. Implementation
 ##### a. ![img_27.png](images/img_27.png)
+
+### Binary Search Tree
+![img_31.png](images/img_31.png)
+
+### Implementation
+#### 1. ![img_32.png](images/img_32.png)
+#### 2. ![img_33.png](images/img_33.png)

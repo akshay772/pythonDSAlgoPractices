@@ -30,7 +30,7 @@ class BinaryHeap(object):
 
     def percDown(self, i):
         """
-        Method to re-arrange the heap list from up to bottom to set invariant to true
+        Method to re-arrange the heap list from up to bottom to set invariant to true. Start from the middle node
 
         :param i:
         :return:
@@ -79,6 +79,7 @@ class BinaryHeap(object):
         deleted = self.heapList[1]
         self.heapList[1] = self.heapList[self.currentSize]
         self.currentSize -= 1
+        # Remove the last since it is shifted to root node
         self.heapList.pop()
         self.percDown(1)
 
