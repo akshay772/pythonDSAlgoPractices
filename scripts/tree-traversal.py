@@ -4,16 +4,18 @@
 from implementation_tree_using_OOP import BinaryTree
 
 
-def traversePreOrder(tree: BinaryTree):
+def traversePreOrder(tree: BinaryTree, count):
     """
     Function to traverse a Binary Tree Pre-order
+    :param count:
     :param tree:
     :return:
     """
     if tree:
-        print(tree.getRootVal())
-        traversePreOrder(tree.getLeftChild())
-        traversePreOrder(tree.getRightChild())
+        count += 1
+        print(count, tree.getRootVal())
+        traversePreOrder(tree.getLeftChild(), count)
+        traversePreOrder(tree.getRightChild(), count)
 
 
 def traversePostOrder(tree: BinaryTree):
@@ -23,8 +25,8 @@ def traversePostOrder(tree: BinaryTree):
     :return:
     """
     if tree:
-        traversePreOrder(tree.getLeftChild())
-        traversePreOrder(tree.getRightChild())
+        traversePostOrder(tree.getLeftChild())
+        traversePostOrder(tree.getRightChild())
         print(tree.getRootVal())
 
 
@@ -40,15 +42,21 @@ def traverseInOrder(tree: BinaryTree):
         traversePreOrder(tree.getRightChild())
 
 
-bt = BinaryTree('a')
-bt.insertLeft('b')
-bt.insertRight('c')
+# Driver code
+if __name__ == "__main__":
+    bt = BinaryTree('1')
+    bt.insertLeft('2')
+    bt.insertRight('3')
+    bt.leftChild.insertLeft('4')
+    bt.leftChild.insertRight('5')
+    bt.rightChild.insertLeft('6')
+    bt.rightChild.insertRight('7')
 
-print('Pre-Oder traversal')
-traversePreOrder(bt)
-# bt.traversePreOrder()
-print('Post-Oder traversal')
-traversePostOrder(bt)
-# bt.traversePostOrder()
-print('In-Oder traversal')
-bt.traverseInOrder()
+    print('Pre-Oder traversal')
+    traversePreOrder(bt, 0)
+    # bt.traversePreOrder()
+    print('Post-Oder traversal')
+    traversePostOrder(bt)
+    # bt.traversePostOrder()
+    print('In-Oder traversal')
+    bt.traverseInOrder()
