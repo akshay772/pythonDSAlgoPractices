@@ -6,4 +6,5 @@ Udemy course for DS Algo using Python
 ### 3. Linked Lists
 ### 4. Recursion
 ### 5. Tree
-### 6. Searching and Sorting
+### 6. Searching
+### 7. Sorting
